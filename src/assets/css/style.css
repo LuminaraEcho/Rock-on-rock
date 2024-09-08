@@ -1,0 +1,283 @@
+*{
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(-145deg, black, rgb(102, 101, 101));
+  color: white;
+}
+/* Formataçõ do heaader */
+header{
+  width: 100%;
+  background-image: url(../img/bg-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  filter: brightness(80%);
+  z-index: -2;
+}
+
+.nav_lista{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+}
+
+.nav_textos h1{
+  font-size: 3rem;
+  letter-spacing: 10px;
+  color: #a8a8a8;
+  text-shadow: 2px 3px 1px rgba(255, 255, 255, 0.795);
+  margin-bottom: 10px;
+}
+.nav_textos span{
+  display: block;
+  margin-bottom: 4px;
+  padding: 8px;
+  background-color: #6703e9cb;
+  font-size: 22px;
+  border-radius: 4px 8px 4px 8px;
+  text-transform: uppercase;
+}
+
+.nav_sub_textos{
+  margin-top: 2em;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.nav_sub_textos p{
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;letter-spacing: 5px;
+}
+/* formatação do conometro */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 2em;
+  text-align: center;
+}
+#conometro{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+  width: 100%;
+}
+#conometro div{
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #6703e98e;
+  width: 100px;
+  height: 100px;
+}
+
+#conometro span{
+  display: block;
+  font-size: 2em;
+}
+
+#conometro p{
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/* Formatacao do area do cadastros */
+
+.main_cadastro{
+  width: 100%;
+  background-image: url(../img/bg-02.jpg);
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+
+  gap: 10px;
+}
+
+.main_textos{
+  width: 50%;
+  color: #fff;
+}
+
+.main_cadastro h2{
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.main_cadastro p{
+  font-size: 18px;
+  line-height: 30px;
+}
+/* cadastro */
+.cadastro{
+  width: 480px;
+}
+.cadastro form{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ color: white;
+ padding: 1em;
+}
+
+label, input{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.cadastro input{
+  padding: 1em;
+  margin-bottom: 15px;
+  border: 0;outline: 0;
+  background-color: #ffffffaf;
+  border-radius: 10px;
+}
+#submit{
+  background-color: #6703e9cb;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#submit:hover{
+  background-color: #741de7be;
+}
+/* formataçao do footer */
+
+footer{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+.footer_logo img{
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  
+}
+.footer_contatos h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer_contatos p{
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+}
+.social #facebook, #instagram{
+  margin-right: 10px;
+}
+
+/* Media quarry */
+
+@media screen and (max-width:768px) {
+  header{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .nav_sub_textos{
+    font-size: initial;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav_sub_textos p{
+    font-size: 16px;
+  }
+  .nav_textos h1{
+    font-size: 3em;
+  }
+  .nav_sub_textos{
+    flex-direction: column;
+  }
+  .nav_sub_textos p{
+    font-size: 16px;
+  }
+
+  .container{
+    width: 90%;
+    padding: 1.5em;
+  }
+  #conometro{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #conometro div{
+    padding: 1em;
+    font-size: .75em;
+
+  }
+
+  #submit{
+    font-size: 16px;
+  }
+  .main_cadastro{
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background-size: cover;
+  }
+  .main_textos{
+    width: inherit;
+    font-size: 1em;
+  }
+  .main_textos h2{
+    font-size: 1.5em;
+  }
+  .main_textos p{
+    font-size: 14px;
+  }
+  .cadastro{
+    width: inherit;
+  }
+  footer{
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    
+  }
+}
