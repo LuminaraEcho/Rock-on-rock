@@ -238,16 +238,18 @@ footer{
   .container{
     width: 90%;
     padding: 1.5em;
+    margin: 0 auto;
   }
   #conometro{
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
 
   #conometro div{
     padding: 1em;
     font-size: .75em;
-
+    width:100px;
+    height: 100px;
   }
 
   #submit{
